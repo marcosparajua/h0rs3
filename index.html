@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>4ng3l</title>
+    <meta name="description" content="">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+
+<body>
+
+   <a-scene>
+
+ 
+        <a-assets>
+           
+            <a-asset-item id="monster" src="assets\horse.gltf"></a-asset-item>
+        </a-assets>
+    
+      
+  
+    
+   
+
+          <a-entity static-body gltf-model="#monster" scale ="300 500 300"position="-20 5 -370"
+          animation="property: rotation; to: 0 36 0; loop: true; dur: 100000"></a-entity>
+          <a-entity static-body gltf-model="#monster" scale ="300 500 300"position="-20 5 -370"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 100000"></a-entity>
+          <a-entity static-body gltf-model="#monster" scale ="300 500 300"position="-20 5 -370"
+          animation="property: rotation; to: 0 36 0; loop: true; dur: 100000"></a-entity>
+
+
+</a-scene>
+</body>
+
+</html>
