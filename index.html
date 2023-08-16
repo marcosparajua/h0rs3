@@ -5,23 +5,34 @@
     <title>4ng3l</title>
     <meta name="description" content="">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
   </head>
 
-<body>
-
-   <a-scene>
+<body >
+  <a-scene embedded arjs>
 
  
         <a-assets>
            
             <a-asset-item id="monster" src="assets\horse.gltf"></a-asset-item>
         </a-assets>
+        <a-marker-camera type="pattern" patternUrl="assets\pattern-model_surface_text_material0001_map_Kd.patt"></a-marker-camera>
     
       
   
     
    
 
+          <a-entity static-body gltf-model="#monster" 
+          animation="property: rotation; to: 0 36 0; loop: true; dur: 100000"></a-entity>
+          <a-entity static-body gltf-model="#monster" 
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 100000"></a-entity>
+          <a-entity static-body gltf-model="#monster" 
+          animation="property: rotation; to: 0 36 0; loop: true; dur: 100000"></a-entity>
+
+
+</a-scene>
+</body>
           <a-entity static-body gltf-model="#monster" scale ="300 500 300"position="-20 5 -370"
           animation="property: rotation; to: 0 36 0; loop: true; dur: 100000"></a-entity>
           <a-entity static-body gltf-model="#monster" scale ="300 500 300"position="-20 5 -370"
